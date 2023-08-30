@@ -4,8 +4,8 @@ const finalMessage = document.querySelector(".final");
 const replay = document.querySelector("#replay");
 
 const resetDOM = ()=>{
-    counter.classList.add("hide");
-    finalMessage.classList.add("show");
+    counter.classList.remove("hide");
+    finalMessage.classList.remove("show");
     nums.forEach((num)=>(num.classList.value = ""));
     nums[0].classList.add("in");
 }
