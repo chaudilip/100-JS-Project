@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fef9f2;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 60vw;
+    height: 80vh;
+}
+
+.img-container-before,
+.img-container-after{
+    height: 80vh;
+    width: 60vw;
+    position: absolute;
+}
+
+img{
+    width: 60vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.img-container-before{
+    width: 30vw;
+    overflow: hidden;
+}
+
+.slider{
+    position: absolute;
+    width: 0.5rem;
+    height: 100%;
+    top: 0;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%) ;
+    z-index: 10;
+    pointer-events: none;
+}
